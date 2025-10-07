@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="text-2xl font-bold text-gray-800">MyStore</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-gray-600 hover:text-blue-600">Home</a></li>
+                    <li><a href="#products" class="text-gray-600 hover:text-blue-600">Products</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-600">About</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center h-96 flex items-center justify-center text-white" style="background-image: url('https://via.placeholder.com/1500x500/333333/FFFFFF?text=Awesome+Products');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center">
+            <h1 class="text-5xl font-bold mb-4">Discover Our Latest Collection</h1>
+            <p class="text-xl mb-8">High-quality products for every need.</p>
+            <a href="#products" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300/CCCCCC/FFFFFF?text=Product+1" alt="Product 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Stylish Watch</h3>
+                        <p class="text-gray-600 text-lg mb-4">$120.00</p>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300/BBBBBB/FFFFFF?text=Product+2" alt="Product 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Premium Headphones</h3>
+                        <p class="text-gray-600 text-lg mb-4">$250.00</p>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300/AAAAAA/FFFFFF?text=Product+3" alt="Product 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Designer Backpack</h3>
+                        <p class="text-gray-600 text-lg mb-4">$90.00</p>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5">
+                    </div>
+                    <p class="text-gray-700 mb-4">"Absolutely love the products! High quality and excellent customer service. Will definitely buy again."</p>
+                    <p class="font-semibold text-gray-800">- Jane Doe</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/CCCCCC/000000?text=⭐" alt="Star" class="w-5 h-5">
+                    </div>
+                    <p class="text-gray-700 mb-4">"Great selection and fast shipping. The product exceeded my expectations. Highly recommended!"</p>
+                    <p class="font-semibold text-gray-800">- John Smith</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5 mr-1">
+                        <img src="https://via.placeholder.com/50/FFD700/000000?text=⭐" alt="Star" class="w-5 h-5">
+                    </div>
+                    <p class="text-gray-700 mb-4">"Fantastic experience from start to finish. The website is easy to navigate and the products are top-notch."</p>
+                    <p class="font-semibold text-gray-800">- Emily White</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <p>&copy; 2025 MyStore. All rights reserved.</p>
+                <p>123 Main Street, Anytown, USA</p>
+                <p>Email: info@mystore.com | Phone: (123) 456-7890</p>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white"><img src="https://via.placeholder.com/24/FFFFFF/000000?text=FB" alt="Facebook" class="w-6 h-6"></a>
+                <a href="#" class="text-gray-400 hover:text-white"><img src="https://via.placeholder.com/24/FFFFFF/000000?text=TW" alt="Twitter" class="w-6 h-6"></a>
+                <a href="#" class="text-gray-400 hover:text-white"><img src="https://via.placeholder.com/24/FFFFFF/000000?text=IG" alt="Instagram" class="w-6 h-6"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.querySelector('header button');
+            const navMenu = document.querySelector('header nav ul');
+
+            menuButton.addEventListener('click', function () {
+                navMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
